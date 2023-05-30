@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-  padding:0;
-  margin:0;
-  border:0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
   box-sizing: border-box;
-  color:antiquewhite;
+  color: antiquewhite;
 }
 
-body{
+body {
   background-color: #1F1147;
+  /* Define a opacidade desejada para o efeito de marca d'água */
 }

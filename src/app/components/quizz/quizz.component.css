@@ -72,4 +72,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.quizz_results p {
+  margin-bottom: 30px;
+}
+
+.quizz_results button {
+  box-shadow: 2px 2px 0px 2px black;
+  color: #1F0539;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
 }
