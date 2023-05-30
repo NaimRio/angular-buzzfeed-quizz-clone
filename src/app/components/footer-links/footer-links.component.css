@@ -1,0 +1,14 @@
+.container__footer-links>ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__footer-links>ul>li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.container__footer-links>ul>li>a {
+  text-decoration: none;
+  font-family: 'Segoe UI';
+}
