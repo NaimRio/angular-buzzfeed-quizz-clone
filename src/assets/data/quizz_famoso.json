@@ -1,0 +1,179 @@
+{
+    "title": "Descubra qual personagem de filme você é!",
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qual é a sua personalidade em uma festa?",
+            "options": [
+                {
+                    "id": 1,
+                    "name": "O centro das atenções, adoro animar a todos!",
+                    "alias": "A"
+                },
+                {
+                    "id": 2,
+                    "name": "Gosto de conversar com pessoas diferentes e conhecer suas histórias.",
+                    "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "Prefiro ficar em um canto observando tudo ao meu redor.",
+                    "alias": "C"
+                },
+                {
+                    "id": 4,
+                    "name": "Sou mais reservado(a) e aproveito para conversar com amigos próximos.",
+                    "alias": "D"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "Qual é o seu maior talento?",
+            "options": [
+                {
+                    "id": 1,
+                    "name": "Sou criativo(a) e adoro pensar fora da caixa.",
+                    "alias": "A"
+                },
+                {
+                    "id": 2,
+                    "name": "Tenho habilidades técnicas e sou bom(a) em resolver problemas.",
+                    "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "Sou ótimo(a) em ouvir e aconselhar os outros.",
+                    "alias": "C"
+                },
+                {
+                    "id": 4,
+                    "name": "Tenho muita energia e sou bom(a) em esportes.",
+                    "alias": "D"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Qual é a sua comida favorita?",
+            "options": [
+                {
+                    "id": 1,
+                    "name": "Pizza ou hambúrguer, algo rápido e delicioso!",
+                    "alias": "A"
+                },
+                {
+                    "id": 2,
+                    "name": "Comida exótica e cheia de sabores diferentes.",
+                    "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "Um prato caseiro e reconfortante.",
+                    "alias": "C"
+                },
+                {
+                    "id": 4,
+                    "name": "Salada ou algo saudável, gosto de cuidar da minha alimentação.",
+                    "alias": "D"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Qual é o seu estilo de moda preferido?",
+            "options": [
+                {
+                    "id": 1,
+                    "name": "Descolado(a) e cheio(a) de tendências.",
+                    "alias": "A"
+                },
+                {
+                    "id": 2,
+                    "name": "Elegante e clássico(a).",
+                    "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "Casual e confortável.",
+                    "alias": "C"
+                },
+                {
+                    "id": 4,
+                    "name": "Esportivo e descontraído(a).",
+                    "alias": "D"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "O que mais te irrita?",
+            "options": [
+                {
+                    "id": 1,
+                    "name": "Pessoas que não têm senso de humor.",
+                    "alias": "A"
+                },
+                {
+                    "id": 2,
+                    "name": "Desorganização e atrasos.",
+                    "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "Falsidade e hipocrisia.",
+                    "alias": "C"
+                },
+                {
+                    "id": 4,
+                    "name": "Injustiças e desigualdades.",
+                    "alias": "D"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Qual é o seu hobby favorito?",
+            "options": [
+                {
+                    "id": 1,
+                    "name": "Arte, música ou dança.",
+                    "alias": "A"
+                },
+                {
+                    "id": 2,
+                    "name": "Ler ou assistir filmes.",
+                    "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "Cozinhar ou fazer atividades ao ar livre.",
+                    "alias": "C"
+                },
+                {
+                    "id": 4,
+                    "name": "Praticar esportes ou atividades físicas.",
+                    "alias": "D"
+                }
+            ]
+        }
+    ],
+    "results": {
+        "A": {
+            "msg": "Você é o 'Incrívelmente Criativo'. Assim como Doc. Emmett Brown de De Volta Para o Futuro, você é uma pessoa cheia de energia e criatividade. Você adora se destacar e trazer diversão para todos ao seu redor.",
+            "img": "https://listasnerds.com.br/wp-content/uploads/2022/02/Emmett-Brown.jpg"
+        },
+        "B": {
+            "msg": "Você é o 'Mente Brilhante'. Assim como Hermione Granger de Harry Potter, você é inteligente, observador(a) e sempre busca soluções para os problemas. Sua perspicácia e habilidades técnicas são admiráveis.",
+            "img": "https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2018/01/legiao_Wmc7zjIJYfX1ThS6eygdNrkZ2AQMqV8CDsBPRlL_uK.png.webp"
+        },
+        "C": {
+            "msg": "Você é o 'Amigo Sábio'. Assim como Mestre Yoda de Star Wars, você é uma pessoa calma, paciente e que gosta de ouvir os outros. Seus conselhos são valiosos e você sempre está disposto(a) a ajudar.",
+            "img": "https://blog.multiversodesign.com.br/wp-content/uploads/2016/11/yoda.jpg"
+        },
+        "D": {
+            "msg": "Você é o 'Herói Atlético'. Assim como Steve Rogers de Captão América, você é enérgico(a), corajoso(a) e cheio(a) de determinação. Você se destaca em atividades físicas e sempre está pronto(a) para enfrentar desafios.",
+            "img": "https://disneyplusbrasil.com.br/wp-content/uploads/2022/11/Chris-Evans-Capitao-America.jpg"
+        }
+    }
+}

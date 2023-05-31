@@ -21,7 +21,8 @@
   <div *ngIf=finished class="quizz_results">
     <h1>O Seu resultado é:</h1>
     <p>{{answerSelected}}</p>
-    <button (click)="resetarPagina()">JOGAR NOVAMENTE</button>
+    <img class="img_result" src="{{ foto_resultado }}" alt="">
+    <button class="btn-reset" (click)="resetarPagina()">JOGAR NOVAMENTE</button>
     <!-- <button (click)="reloadMyComponent()">JOGAR NOVAMENTE</button> -->
   </div>
 </div>

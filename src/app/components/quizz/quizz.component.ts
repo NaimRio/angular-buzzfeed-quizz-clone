@@ -1,5 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import quizz_questions from "../../../assets/data/quizz_questions.json"
+import { shuffle } from "lodash";
+// import quizz_questions from "../../../assets/data/quizz_questions.json";
+import quizz_questions from "../../../assets/data/quizz_famoso.json";
 
 @Component({
   selector: 'app-quizz',
@@ -23,13 +25,9 @@ export class QuizzComponent implements OnInit {
   finished: boolean = false
 
   reloadComponent: boolean = true
+  foto_resultado: string = ""
 
   constructor(private renderer: Renderer2) { }
-
-  reloadMyComponent() {
-    this.reloadComponent = false;
-    this.reloadComponent = true;
-  }
 
   resetarPagina() {
     this.renderer.setProperty(window, 'location.href', '/');
@@ -41,14 +39,15 @@ export class QuizzComponent implements OnInit {
       this.finished = false
       this.title = quizz_questions.title
 
-      this.questions = quizz_questions.questions
+      this.questions = shuffle(quizz_questions.questions);
+      // this.questions = quizz_questions.questions
       this.questionSelected = this.questions[this.questionIndex]
 
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
+      // console.log(this.questionIndex)
+      // console.log(this.questionMaxIndex)
     }
 
   }
@@ -67,7 +66,8 @@ export class QuizzComponent implements OnInit {
     } else {
       const finalAnswer: string = await this.checkResult(this.answers)
       this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results]
+      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results].msg
+      this.foto_resultado = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results].img
     }
   }
 

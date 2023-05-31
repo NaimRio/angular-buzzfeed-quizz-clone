@@ -60,6 +60,36 @@
 .btn-option:active {
   position: relative;
   top: 1px;
+  left: 1px;
+}
+
+.btn-reset {
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 17px;
+  box-shadow: 2px 2px 0px 2px black;
+  color: #1F0539;
+  width: 120px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn-reset:hover {
+  background-color: #5cbf2a;
+}
+
+.btn-reset:active {
+  position: relative;
+  box-shadow: 1px 1px 0px 1px black;
+  top: 1px;
+  left: 1px;
+}
+
+.img_result {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .quizz_results {
@@ -77,14 +107,6 @@
 
 .quizz_results p {
   margin-bottom: 30px;
-}
-
-.quizz_results button {
-  box-shadow: 2px 2px 0px 2px black;
-  color: #1F0539;
-  width: 100px;
-  height: 50px;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 10px;
+  text-align: center;
+  font-size: 17px;
 }

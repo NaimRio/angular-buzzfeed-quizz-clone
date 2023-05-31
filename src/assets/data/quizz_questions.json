@@ -1,55 +1,125 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
-  "questions":[
+  "title": "Você seria um heroi ou vilão ?",
+  "questions": [
     {
-      "id":1,
+      "id": 1,
       "question": "Qual super poder você escolheria ?",
-      "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+      "options": [
+        {
+          "id": 1,
+          "name": "Raios-Lasers",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Voar",
+          "alias": "B"
+        },
+        {
+          "id": 3,
+          "name": "Explodir coisas",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "Curar feridas",
+          "alias": "B"
+        },
+        {
+          "id": 5,
+          "name": "Soltar fogo pelas mãos",
+          "alias": "A"
+        }
       ]
     },
     {
-      "id":2,
+      "id": 2,
       "question": "Quem você salvaria primeiro ?",
-      "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+      "options": [
+        {
+          "id": 1,
+          "name": "Crianças",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Idosos",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "Não saberia escolher",
+          "alias": "B"
+        }
       ]
     },
     {
-      "id":3,
+      "id": 3,
       "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-      "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+      "options": [
+        {
+          "id": 1,
+          "name": "Não destruir prédios",
+          "alias": "B"
+        },
+        {
+          "id": 2,
+          "name": "Socar a cara do inimigo",
+          "alias": "A"
+        },
+        {
+          "id": 3,
+          "name": "Não sujar meu traje",
+          "alias": "A"
+        },
+        {
+          "id": 4,
+          "name": "Não deixar ninguém se ferir",
+          "alias": "B"
+        }
       ]
     },
     {
-      "id":4,
+      "id": 4,
       "question": "Qual o seu maior foco ?",
-      "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+      "options": [
+        {
+          "id": 1,
+          "name": "Ficar rico com poderes",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Salvar a cidade",
+          "alias": "B"
+        }
       ]
     },
     {
-      "id":5,
+      "id": 5,
       "question": "Qual o seu apelido de super ser ?",
-      "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+      "options": [
+        {
+          "id": 1,
+          "name": "O Terrivel",
+          "alias": "A"
+        },
+        {
+          "id": 2,
+          "name": "Amigo da vizinhança",
+          "alias": "B"
+        }
       ]
     }
   ],
-  "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+  "results": {
+    "A": {
+      "msg": "Você muito provavelmente seria um super vilão!",
+      "img": "https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/12/doctor-doom-featured.jpg"
+    },
+    "B": {
+      "msg": "Você muito provavelmente seria um super Herói!",
+      "img": "https://s2.glbimg.com/giAXUXvxG3ULfw7n8gxqG7x4r94=/0x0:1179x671/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/A/m/FKbifKTdS5DSGbEs4Pvg/henry.jpg"
+    }
   }
 }
