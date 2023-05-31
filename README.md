@@ -16,4 +16,8 @@
 
 pelo github no link:
 
-- [Projeto Pokédex](https://github.com/NaimRio/angular-buzzfeed-quizz-clone)
+- [Projeto BuzzFeed](https://github.com/NaimRio/angular-buzzfeed-quizz-clone)
+
+ou acessando o link 
+
+- [BuzzFeed](https://naimrio.github.io/angular-buzzfeed-quizz-clone/)
