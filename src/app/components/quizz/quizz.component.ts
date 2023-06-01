@@ -43,6 +43,10 @@ export class QuizzComponent implements OnInit {
       // this.questions = quizz_questions.questions
       this.questionSelected = this.questions[this.questionIndex]
 
+      this.questions.forEach((question: any) => {
+        question.options = this.shuffleArray(question.options);
+      });
+
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
@@ -50,6 +54,14 @@ export class QuizzComponent implements OnInit {
       // console.log(this.questionMaxIndex)
     }
 
+  }
+
+  shuffleArray(array: any[]): any[] {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   }
 
   playerChoose(value: string) {
