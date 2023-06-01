@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { QuizzService } from '../../services/quizz.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-menu-lateral',
+  templateUrl: './menu-lateral.component.html',
+  styleUrls: ['./menu-lateral.component.css']
 })
-export class HomeComponent implements OnInit {
+export class MenuLateralComponent implements OnInit {
 
   constructor(private quizzService: QuizzService) { }
 

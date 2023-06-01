@@ -1,7 +1,9 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { shuffle } from "lodash";
+import { QuizzService } from '../../services/quizz.service';
 // import quizz_questions from "../../../assets/data/quizz_questions.json";
 import quizz_questions from "../../../assets/data/quizz_famoso.json";
+import { Type } from '@angular/compiler';
 
 @Component({
   selector: 'app-quizz',
@@ -17,17 +19,47 @@ export class QuizzComponent implements OnInit {
   questionSelected: any
 
   answers: string[] = []
-  answerSelected: string = ""
+  answerSelected: any = { msg: '', img: '' }
 
   questionIndex: number = 0
   questionMaxIndex: number = 0
 
+  questionResults: object = {}
+
   finished: boolean = false
 
-  reloadComponent: boolean = true
-  foto_resultado: string = ""
 
-  constructor(private renderer: Renderer2) { }
+  reloadComponent: boolean = true
+  // foto_resultado: string = ""
+
+  constructor(private renderer: Renderer2, private quizzService: QuizzService) { }
+
+  loadQuizz(filename: string) {
+    // this.resetarPagina(); 
+
+    import(`../../../assets/data/${filename}`)
+      .then((quizz) => {
+        this.setupQuizz(quizz.default);
+      })
+      .catch((error) => {
+        console.error(`Erro ao carregar o arquivo JSON: ${error}`);
+      });
+  }
+
+  setupQuizz(quizz: any) {
+    if (quizz) {
+      this.finished = false;
+      this.title = quizz.title;
+      this.questions = shuffle(quizz.questions);
+      this.questionSelected = this.questions[this.questionIndex];
+      this.questions.forEach((question: any) => {
+        question.options = this.shuffleArray(question.options);
+      });
+      this.questionResults = quizz.results
+      this.questionIndex = 0;
+      this.questionMaxIndex = this.questions.length;
+    }
+  }
 
   resetarPagina() {
     this.renderer.setProperty(window, 'location.href', '/');
@@ -35,6 +67,10 @@ export class QuizzComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.quizzService.quizzSelected.subscribe((filename: string) => {
+      this.loadQuizz(filename);
+    });
+
     if (quizz_questions) {
       this.finished = false
       this.title = quizz_questions.title
@@ -46,7 +82,7 @@ export class QuizzComponent implements OnInit {
       this.questions.forEach((question: any) => {
         question.options = this.shuffleArray(question.options);
       });
-
+      this.questionResults = quizz_questions.results
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
@@ -78,8 +114,10 @@ export class QuizzComponent implements OnInit {
     } else {
       const finalAnswer: string = await this.checkResult(this.answers)
       this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results].msg
-      this.foto_resultado = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results].img
+
+      this.answerSelected = this.questionResults[finalAnswer as keyof typeof this.questionResults]
+      // this.foto_resultado = this.questionResults[finalAnswer as keyof typeof this.questionResults].img
+      // this.foto_resultado = this.questionResults.[finalAnswer as keyof typeof this.questionResults].img
     }
   }
 
@@ -98,5 +136,6 @@ export class QuizzComponent implements OnInit {
 
     return result
   }
+
 
 }

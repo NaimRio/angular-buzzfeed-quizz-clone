@@ -7,6 +7,7 @@ import { QuizzComponent } from './components/quizz/quizz.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterLinksComponent } from './components/footer-links/footer-links.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     QuizzComponent,
     HomeComponent,
     FooterLinksComponent,
+    MenuLateralComponent,
   ],
   imports: [
     BrowserModule,
